@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+
+  --color-brand-fuchsia: #c90253;
+  --color-brand-fuchsia-hover: #b00147;
+  --color-brand-dark: #131313;
+  --color-brand-dark-dim: #0a0a0a;
+  --color-brand-gray: #1b1b1c;
+  --color-brand-silver: #c9c6c5;
+  --color-brand-outline: #444748;
+}
+
+/* Custom glassmorphism classes */
+.glass-panel {
+  background-color: rgba(27, 27, 28, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(201, 198, 197, 0.1);
+}
+
+.glass-panel-interactive {
+  background-color: rgba(27, 27, 28, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(201, 198, 197, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-interactive:hover {
+  background-color: rgba(32, 32, 32, 0.85);
+  border-color: rgba(201, 2, 83, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Inky deep shadow */
+.shadow-deep {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* Custom scrollbar for discrete luxury feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c90253;
+}
+
+/* Soft entry transitions */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Premium Animated Background Glows */
+.animate-glow-slow {
+  animation: floatGlow1 22s infinite ease-in-out;
+}
+
+.animate-glow-pulse {
+  animation: floatGlow2 16s infinite ease-in-out;
+}
+
+@keyframes floatGlow1 {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1) translate(0px, 0px) rotate(0deg);
+  }
+  33% {
+    transform: translate(-50%, -50%) scale(1.18) translate(30px, -45px) rotate(120deg);
+  }
+  66% {
+    transform: translate(-50%, -50%) scale(0.9) translate(-35px, 35px) rotate(240deg);
+  }
+}
+
+@keyframes floatGlow2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-45px, 30px) scale(1.12);
+    opacity: 0.75;
+  }
+}
+
+/* Animated ambient background mix */
+.bg-gradient-animated {
+  background: linear-gradient(135deg, #050505 0%, #0d060a 35%, #050505 65%, #0d060a 100%);
+  background-size: 300% 300%;
+  animation: gradientBG 24s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

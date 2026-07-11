@@ -1,0 +1,6 @@
+{
+  "name": "Fruto Prohibido",
+  "description": "Boutique exclusiva de bienestar íntimo, lencería fina y artículos de lujo. Curaduría de excelencia y discreción absoluta.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
