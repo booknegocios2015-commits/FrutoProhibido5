@@ -61,7 +61,7 @@ export default function Header({ onCategoryClick, onWhatsAppClick, onCatalogClic
                   Fruto Prohibido
                 </span>
                 <span className="text-[9px] text-brand-fuchsia tracking-[0.3em] uppercase font-semibold leading-none">
-                  Sex Shop Elegante
+                  Sex Shop
                 </span>
               </div>
             </div>
